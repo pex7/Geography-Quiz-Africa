@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1DA2B343-C800-4897-959F-78EAF514BACF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GeographyQuizAfrica</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2CBB4E32-D761-43BD-946C-D52801C9E5B3</key>
+		<string>ssh://github.com/pex7/Geography-Quiz-Africa.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GeographyQuizAfrica/GeographyQuizAfrica.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2CBB4E32-D761-43BD-946C-D52801C9E5B3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pex7/Geography-Quiz-Africa.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2CBB4E32-D761-43BD-946C-D52801C9E5B3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CBB4E32-D761-43BD-946C-D52801C9E5B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Geography-Quiz-Africa</string>
+		</dict>
+	</array>
+</dict>
+</plist>
