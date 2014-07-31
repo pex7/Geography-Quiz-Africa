@@ -87,7 +87,7 @@
         
     } else {
         SystemSoundID SoundID;
-        NSURL *soundFile = [[NSBundle mainBundle] URLForResource:@"honk_x" withExtension:@"wav"];
+        NSURL *soundFile = [[NSBundle mainBundle] URLForResource:@"boing" withExtension:@"wav"];
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundFile, &SoundID);
         AudioServicesPlaySystemSound(SoundID);
     }

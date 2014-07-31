@@ -32,7 +32,7 @@
 		31EDC6841988ACF1000DA399 /* africa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC6831988ACF1000DA399 /* africa.svg */; };
 		31EDC68A1988BA1E000DA399 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EDC6891988BA1E000DA399 /* AudioToolbox.framework */; };
 		31EDC68C1989DA06000DA399 /* bicycle_bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC68B1989DA06000DA399 /* bicycle_bell.wav */; };
-		31EDC68E1989DB0A000DA399 /* honk_x.wav in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC68D1989DB0A000DA399 /* honk_x.wav */; };
+		31EDC6901989DE8D000DA399 /* boing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC68F1989DE8D000DA399 /* boing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,7 +203,7 @@
 		31EDC6831988ACF1000DA399 /* africa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = africa.svg; sourceTree = "<group>"; };
 		31EDC6891988BA1E000DA399 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		31EDC68B1989DA06000DA399 /* bicycle_bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bicycle_bell.wav; sourceTree = "<group>"; };
-		31EDC68D1989DB0A000DA399 /* honk_x.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = honk_x.wav; sourceTree = "<group>"; };
+		31EDC68F1989DE8D000DA399 /* boing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boing.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +283,7 @@
 				31EDC66C19874C92000DA399 /* GQAMapViewController.h */,
 				31EDC66D19874C92000DA399 /* GQAMapViewController.m */,
 				31EDC68B1989DA06000DA399 /* bicycle_bell.wav */,
-				31EDC68D1989DB0A000DA399 /* honk_x.wav */,
+				31EDC68F1989DE8D000DA399 /* boing.wav */,
 				31EDC67219887C91000DA399 /* Data.h */,
 				31EDC67319887C91000DA399 /* Data.m */,
 				317B7D6D195FC07100B42964 /* Images.xcassets */,
@@ -558,9 +558,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				317B7D6E195FC07100B42964 /* Images.xcassets in Resources */,
-				31EDC68E1989DB0A000DA399 /* honk_x.wav in Resources */,
 				317B7D60195FC07100B42964 /* InfoPlist.strings in Resources */,
 				31EDC6841988ACF1000DA399 /* africa.svg in Resources */,
+				31EDC6901989DE8D000DA399 /* boing.wav in Resources */,
 				31EDC68C1989DA06000DA399 /* bicycle_bell.wav in Resources */,
 				31EDC66B19874C65000DA399 /* africa-outline.png in Resources */,
 				31EDC67819888117000DA399 /* Main-iPad.storyboard in Resources */,
