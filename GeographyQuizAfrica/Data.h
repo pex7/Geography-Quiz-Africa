@@ -10,7 +10,6 @@
 
 @interface Data : NSObject
 
-+ (NSArray *)countries;
-+ (NSArray *)capitals;
++ (NSDictionary *)map;
 
 @end

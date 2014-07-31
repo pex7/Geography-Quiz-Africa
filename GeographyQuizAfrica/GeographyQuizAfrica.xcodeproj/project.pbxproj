@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3101BA32196E283100F9A452 /* africa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3101BA31196E283100F9A452 /* africa.svg */; };
 		317B7D56195FC07100B42964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B7D55195FC07100B42964 /* Foundation.framework */; };
 		317B7D58195FC07100B42964 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B7D57195FC07100B42964 /* CoreGraphics.framework */; };
 		317B7D5A195FC07100B42964 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B7D59195FC07100B42964 /* UIKit.framework */; };
@@ -30,7 +29,10 @@
 		31EDC66E19874C92000DA399 /* GQAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EDC66D19874C92000DA399 /* GQAMapViewController.m */; };
 		31EDC67419887C91000DA399 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EDC67319887C91000DA399 /* Data.m */; };
 		31EDC67819888117000DA399 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC67719888117000DA399 /* Main-iPad.storyboard */; };
-		31EDC67C19888E36000DA399 /* GQACapitalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EDC67B19888E36000DA399 /* GQACapitalViewController.m */; };
+		31EDC6841988ACF1000DA399 /* africa.svg in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC6831988ACF1000DA399 /* africa.svg */; };
+		31EDC68A1988BA1E000DA399 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EDC6891988BA1E000DA399 /* AudioToolbox.framework */; };
+		31EDC68C1989DA06000DA399 /* bicycle_bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC68B1989DA06000DA399 /* bicycle_bell.wav */; };
+		31EDC68E1989DB0A000DA399 /* honk_x.wav in Resources */ = {isa = PBXBuildFile; fileRef = 31EDC68D1989DB0A000DA399 /* honk_x.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3101BA31196E283100F9A452 /* africa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = africa.svg; sourceTree = "<group>"; };
 		317B7D52195FC07100B42964 /* GeographyQuizAfrica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeographyQuizAfrica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		317B7D55195FC07100B42964 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		317B7D57195FC07100B42964 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,8 +200,10 @@
 		31EDC67219887C91000DA399 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = ../Data.h; sourceTree = "<group>"; };
 		31EDC67319887C91000DA399 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = ../Data.m; sourceTree = "<group>"; };
 		31EDC67719888117000DA399 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
-		31EDC67A19888E36000DA399 /* GQACapitalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQACapitalViewController.h; sourceTree = "<group>"; };
-		31EDC67B19888E36000DA399 /* GQACapitalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQACapitalViewController.m; sourceTree = "<group>"; };
+		31EDC6831988ACF1000DA399 /* africa.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = africa.svg; sourceTree = "<group>"; };
+		31EDC6891988BA1E000DA399 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31EDC68B1989DA06000DA399 /* bicycle_bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bicycle_bell.wav; sourceTree = "<group>"; };
+		31EDC68D1989DB0A000DA399 /* honk_x.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = honk_x.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EDC68A1988BA1E000DA399 /* AudioToolbox.framework in Frameworks */,
 				317B7D5A195FC07100B42964 /* UIKit.framework in Frameworks */,
 				317B7D58195FC07100B42964 /* CoreGraphics.framework in Frameworks */,
 				317B7E14195FC3B200B42964 /* QuartzCore.framework in Frameworks */,
@@ -254,6 +258,7 @@
 		317B7D54195FC07100B42964 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31EDC6891988BA1E000DA399 /* AudioToolbox.framework */,
 				317B7E13195FC3B200B42964 /* QuartzCore.framework */,
 				317B7E11195FC3A200B42964 /* libxml2.dylib */,
 				317B7E0F195FC38F00B42964 /* CoreImage.framework */,
@@ -277,12 +282,12 @@
 				317B7D6B195FC07100B42964 /* GQAViewController.m */,
 				31EDC66C19874C92000DA399 /* GQAMapViewController.h */,
 				31EDC66D19874C92000DA399 /* GQAMapViewController.m */,
-				31EDC67A19888E36000DA399 /* GQACapitalViewController.h */,
-				31EDC67B19888E36000DA399 /* GQACapitalViewController.m */,
+				31EDC68B1989DA06000DA399 /* bicycle_bell.wav */,
+				31EDC68D1989DB0A000DA399 /* honk_x.wav */,
 				31EDC67219887C91000DA399 /* Data.h */,
 				31EDC67319887C91000DA399 /* Data.m */,
-				3101BA31196E283100F9A452 /* africa.svg */,
 				317B7D6D195FC07100B42964 /* Images.xcassets */,
+				31EDC6831988ACF1000DA399 /* africa.svg */,
 				317B7D8A195FC0D600B42964 /* libSVGKit-iOS.1.2.0.a */,
 				317B7D8B195FC0D600B42964 /* usr */,
 				317B7D5C195FC07100B42964 /* Supporting Files */,
@@ -553,8 +558,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				317B7D6E195FC07100B42964 /* Images.xcassets in Resources */,
+				31EDC68E1989DB0A000DA399 /* honk_x.wav in Resources */,
 				317B7D60195FC07100B42964 /* InfoPlist.strings in Resources */,
-				3101BA32196E283100F9A452 /* africa.svg in Resources */,
+				31EDC6841988ACF1000DA399 /* africa.svg in Resources */,
+				31EDC68C1989DA06000DA399 /* bicycle_bell.wav in Resources */,
 				31EDC66B19874C65000DA399 /* africa-outline.png in Resources */,
 				31EDC67819888117000DA399 /* Main-iPad.storyboard in Resources */,
 			);
@@ -580,7 +587,6 @@
 				317B7D6C195FC07100B42964 /* GQAViewController.m in Sources */,
 				317B7D62195FC07100B42964 /* main.m in Sources */,
 				31EDC66E19874C92000DA399 /* GQAMapViewController.m in Sources */,
-				31EDC67C19888E36000DA399 /* GQACapitalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

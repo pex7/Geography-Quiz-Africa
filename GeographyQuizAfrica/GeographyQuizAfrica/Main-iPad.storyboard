@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-385" y="-1117"/>
         </scene>
-        <!--View Controller-->
+        <!--Capital View Controller-->
         <scene sceneID="2UV-mu-xMn">
             <objects>
-                <viewController id="Ywa-eE-hwp" sceneMemberID="viewController">
+                <viewController id="Ywa-eE-hwp" customClass="GQACapitalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cq5-Mt-RaZ"/>
                         <viewControllerLayoutGuide type="bottom" id="eck-Ft-dUP"/>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jC3-3R-fkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-385" y="46"/>
+            <point key="canvasLocation" x="-385" y="-10"/>
         </scene>
     </scenes>
     <resources>
