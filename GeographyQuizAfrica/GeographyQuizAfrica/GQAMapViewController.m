@@ -18,6 +18,7 @@
 @property (strong, nonatomic) SVGKLayeredImageView *imageView;
 @property (strong, nonatomic) CAShapeLayer *lastTappedLayer;
 @property (strong, nonatomic) UIPickerView *pickerView;
+@property (strong, nonatomic) NSArray *sortedMap;
 
 @end
 
@@ -70,16 +71,25 @@
     [newGameButton  setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [newGameButton addTarget:self action:@selector(onSubmit:) forControlEvents:UIControlEventTouchUpInside];
     [[newGameButton titleLabel] setFont:[UIFont boldSystemFontOfSize:22]];
+    
+    self.sortedMap = [[Data map] sortedArrayUsingComparator:^NSComparisonResult(NSArray *obj1, NSArray *obj2) {
+        return [obj1[1] compare:obj2[1]];
+    }];
 
 }
 
 -(void)onSubmit:(UIButton *)submitButton {
-    NSString *key = [[Data map] allKeys][[self.pickerView selectedRowInComponent:0]];
-    NSString *title = [Data map][key][0];
+    NSArray *countryData = self.sortedMap[[self.pickerView
+                                       selectedRowInComponent:0]];
+    NSString *title = countryData[1];
     NSString *tappedKey = NSStringFromCGPoint(lastTappedLayer.frame.origin);
-    NSString *tappedTitle = [Data map][tappedKey][0];
-    if ([title isEqualToString: tappedTitle]) {
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(NSArray *row, NSDictionary *bindings) {
+        return ([tappedKey isEqualToString:row[0]]);
+    }];
+    NSArray *tappedMatches = [self.sortedMap filteredArrayUsingPredicate:predicate];
+    if (tappedMatches.count > 0 && [title isEqualToString: tappedMatches[0][1]]) {
         lastTappedLayer.fillColor = [UIColor orangeColor].CGColor;
+        
         SystemSoundID SoundID;
         NSURL *soundFile = [[NSBundle mainBundle] URLForResource:@"bicycle_bell" withExtension:@"wav"];
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundFile, &SoundID);
@@ -127,13 +137,12 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return [[[Data map] allKeys] count];
+    return [[Data map] count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
  
-    NSString *key = [[Data map] allKeys][row];
-    return [Data map][key][0];
+    return self.sortedMap[row][1];
     
 }
 

@@ -10,6 +10,6 @@
 
 @interface Data : NSObject
 
-+ (NSDictionary *)map;
++ (NSArray *)map;
 
 @end
